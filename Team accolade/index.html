@@ -11,28 +11,34 @@
 <body>
 
     <section id="header">
-        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        <a href="#home"><img src="logo.jpg" class="logo" alt=""></a>
 <div>
     <ul id="navbar">
-<li><a href="home.html">About Us</a></li>
-<li><a href="home.html">Contact Us</a></li>
+        <li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact-details">Contact Us</a></li>
+<li>
+    
+
 
 </div>
-
+<!------home---------->
     </section>
-<section id="blog">
+<section class="blog" id="home" >
 <div class="blog-box">
     <div class="blog-details">
-        <h1>To ensure a good health and sound health for you</h1>
-        <br>
+        <h1>Verification of drug before consumption is a sure
+            way to keep the country healthy</h1>
+        
             <p>Search for verified registered drugs</p>
             <br>
             <br>
-            <input type="text" name="search"  placeholder="Name of drug">
+            <div class="wrapper">
+            <input type="text" name="search" id="search" placeholder="Name of drug"autocomplete="chrome-off">
             <button>Search</button> 
-            
+            <div class="results"></div>
            <hr> 
-
+</div> 
             </div>
 
 <div class="blog-image">
@@ -46,7 +52,8 @@
 </section>
 
 </section>
-<section id="blog-2">
+<!------about------>
+<section class="blog-2" id="about">
 <div class="blog-box-2">
 
     <div class="blog-image-2">
@@ -67,9 +74,8 @@
     <div class="blog-details-2">
         <h1>Quick and easy processing verifying drugs</h1>
         <br>
-            <p>it uses a dictionary of over 200 latin words, 
-                combined Lorem ipsum dolor sit, amet consectetur adipisicing elit. obcaecati
-                  doloremque!</p>
+            <p>Advocate sound health assurance allow 
+                users to check if a drug is registered by NAFDAC </p>
            <ul class="list">
               <li><i class="fa-solid fa-circle-check" ></i>24/7 access to customer experience team</li>
                <li><i class="fa-solid fa-circle-check" ></i>90% digital based.Less paper work</li>
@@ -77,23 +83,17 @@
            </ul>
 
             </div>
-
-
-
-
-
 </div>
 </section>
 
 
 </section>
-<section id="blog-3">
+<section id="blog-3" class="about">
 <div class="blog-box-3">
     <div class="blog-details-3">
         <h1>Find reliable drugs</h1>
         <br>
-            <p>It uses a dictionary of over 200 latin words,
-                combined with a handful of model sentence structures
+            <p>Verification of drug using NAFDAC reg,name and active ingredient
             </p>
             <br>
             
@@ -114,7 +114,7 @@
              <div class="col">
               <h4>20+</h4>
              <p>Number of cities</p>
-             <p>covered in Abuja</p>
+             <p>covered in Nigeria</p>
              </div>
             <div class="col">
              <h4>100+</h4>
@@ -144,12 +144,12 @@
 </div>
 <div class="form-details">
     <form>
-<h5>Contact Us</h5>
-        <input type="text last" placeholder="Name">
-        <input type="email" placeholder="E-mail">
-        <input type="number" placeholder="+234">
-        <textarea name="" id="" cols="41" rows="5" placeholder="Your Message"></textarea>
-        <button>Send</button>
+<h4>Contact Us</h4>
+        <input type="text last" placeholder="Name" id="contact-name">
+        <input type="email" placeholder="E-mail" id="contact-email">
+        <input type="number" placeholder="+234" id="contact-number">
+        <textarea name="" id="contact-message" cols="41" rows="5" placeholder="Your Message"></textarea>
+        <button id="send">Send</button>
     </form>
 
 
@@ -165,6 +165,7 @@
       <li><i class="fa-brands fa-twitter"></i></li>
       <li><i class="fa-brands fa-youtube"></i></li>  
     </ul>
+    <p>copyright &#169 2023 Advocate sound health assurance</p>
 </footer>
     <script src="script.js"></script>
 </body>
