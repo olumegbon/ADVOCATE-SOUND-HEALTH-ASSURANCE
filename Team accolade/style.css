@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing:border-box;
     font-family: sans-serif;
+    
+    
 }
 
-h1{font-size: 20;
-    line-height: 20px;
+.highlight {
+    border-bottom: 4px solid rgb(142, 247, 224);
+  }
+
+h1{font-size: 20px;
+    line-height: 25px;
     color:#222;}
     
     h2{font-size: 46px;
@@ -26,13 +32,13 @@ h1{font-size: 20;
         .section-p1{padding:40px 80px;}
         .section-m1{margin:40px;}
     
-        
+   /*     
 #header .btn1{
     background-color: rgb(142, 247, 224);
     color: white;
     border-style: none;
     padding: 10px;
-}
+}*/
 
 #header{
     display: flex;
@@ -62,28 +68,28 @@ list-style: none;
     font-weight: 600;
 
 }
-#blog{padding:20px 150px 0 150px;
+.blog{padding:20px 150px 0 150px;
 }
-#blog .blog-box{display: flex;
+.blog .blog-box{display: flex;
 align-items: center;
 width:100%;
 background-color:rgba(255, 255, 255, 0.788);}
 
-#blog .blog-img{
+.blog .blog-img{
     width:50%;
     margin-right: 40px;
 }
-#blog img{
+.blog img{
     width:100%;
     height: 300px;
     object-fit: cover;
 }
-#blog .blog-details{
+.blog .blog-details{
     width: 50%;
     margin-top: 5px;
 
 }
- #blog input{
+ .blog input{
     
     height:2.889rem;
         padding:0  1.25em;
@@ -98,7 +104,7 @@ border-top-right-radius: 0;
 border-bottom-right-radius: 0;  
     
   }
-  #blog button{
+  .blog button{
       background-color:rgb(142, 247, 224);
       color:white;
       white-space: nowrap;
@@ -109,7 +115,7 @@ border-top-right-radius: 0;
 border-bottom-right-radius: 0;
 
   }
-  #blog hr{
+  .blog hr{
       margin-top: 75px;
       font-weight:700;
       width:95%;
@@ -119,25 +125,25 @@ border-bottom-right-radius: 0;
 
 
 
-  #blog-2{padding:20px 150px 0 150px;
+  .blog-2{padding:20px 150px 0 150px;
     margin-top: 40px;
   }
-  #blog-2 .blog-box-2{display: flex;
+  .blog-2 .blog-box-2{display: flex;
   align-items: center;
   width:100%;
   background-color:rgba(255, 255, 255, 0.788);}
   
-  #blog-2 .blog-img-2{
+  .blog-2 .blog-img-2{
       width:50%;
      
   }
-  #blog-2 img{
+  .blog-2 img{
       width:100%;
       height: 300px;
       object-fit: cover;
      
   }
-  #blog-2 .blog-details-2{
+  .blog-2 .blog-details-2{
       width: 50%;
       margin-top: 5px;
       margin-left: 70px;
@@ -323,3 +329,122 @@ text-align: center;
 align-items: center;
 width:100%;
 background-color:rgba(255, 255, 255, 0.788);}*/
+
+
+
+
+/*---signup modal---------*/
+
+
+
+
+  .highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);}
+    #navbar li a:hover{
+        color:rgb(142, 247, 224);
+        transition: all 0.3s ease;
+        
+    }
+
+#navbar.active{
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+}
+
+/*
+@media (max-width:477px){
+
+ *{scroll-behavior: none;
+margin: 0;}   
+
+  #header{display: none;}
+
+  .blog .blog-box {
+    display: block;
+    padding: 10px 30px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.788);
+}*/
+@media (max-width:477px){
+  *{scroll-behavior: none;}
+    
+
+  #header{display: none;}
+  
+  /*
+  .blog{display: inline-block;
+  width:100%;
+  padding:100px 20px 0 20px;
+margin:-100px 0 0 -150px;
+justify-content:center;
+align-items:center;
+display:inline-block;
+
+}*/
+ .blog{
+   display:flex;
+   flex-direction:column;
+   align-items:flex-start;
+   
+ } 
+  
+  .blog .blog-box{display: block;
+      align-items: center;
+      width:70%;
+      background-color:rgba(255, 255, 255, 0.788);
+      padding:20px 0 10px 50px;
+  margin-left: 0 -50px 0 -80px;
+  top:50%;
+  bottom:o;
+  left:50%;
+  right:0; 
+
+
+}
+  
+  
+  
+      .blog .blog-img{
+          width:70%;
+          margin-right: auto;
+          display:block;
+          position:absolute;
+          top:0;
+          bottom:o;
+          left:0;
+          right:0;
+  
+  
+
+          
+      }
+      .blog img{
+          width:70%;
+          height: 300px;
+          object-fit: cover;
+          margin:auto;
+      }
+      .blog .blog-details{
+          width: 70%;
+          margin-top: 5px;
+      
+      }
+  
+  
+  
+  }
+  
+   
+
+
+
+.highlight{display: none;}
+ #blog{display: block;
+margin: 0;} 
+  
+  }
