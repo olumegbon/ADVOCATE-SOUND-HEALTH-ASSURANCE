@@ -143,13 +143,13 @@
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <div class="form-details">
-    <form>
+    <form action="/" method="post">
 <h4>Contact Us</h4>
-        <input type="text last" placeholder="Name" id="contact-name">
-        <input type="email" placeholder="E-mail" id="contact-email">
-        <input type="number" placeholder="+234" id="contact-number">
-        <textarea name="" id="contact-message" cols="41" rows="5" placeholder="Your Message"></textarea>
-        <button id="send">Send</button>
+        <input type="text last" placeholder="Name" id="contact-name" name="name">
+        <input type="email" placeholder="E-mail" id="contact-email" name="email">
+        <input type="tel" placeholder="+234" id="contact-number" name="number">
+        <textarea name="message" id="contact-message" cols="41" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" id="send">Send</button>
     </form>
 
 

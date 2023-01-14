@@ -1,0 +1,36 @@
+{
+  "name": "advocate-sound-health-assurance",
+  "version": "1.0.0",
+  "description": "A Drug Verification Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/olumegbon/ADVOCATE-SOUND-HEALTH-ASSURANCE.git"
+  },
+  "keywords": [
+    "drug-verification",
+    "verify",
+    "drug",
+    "fake-drugs",
+    "health",
+    "advocate"
+  ],
+  "author": "Team Advocate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olumegbon/ADVOCATE-SOUND-HEALTH-ASSURANCE/issues"
+  },
+  "homepage": "https://github.com/olumegbon/ADVOCATE-SOUND-HEALTH-ASSURANCE#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
+}
