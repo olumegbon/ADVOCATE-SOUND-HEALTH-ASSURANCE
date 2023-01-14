@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("Team accolade"));
 
-app.get('/', bodyParser)
+app.get('https://advocate-health-care-6uah-olumegbon.vercel.app/', bodyParser)
 async function mainMail(name, email, number, message) {
   const transporter = await nodemailer.createTransport({
     host: "smtp-mail.outlook.com",
@@ -24,12 +24,13 @@ async function mainMail(name, email, number, message) {
   });
   
   const mailOption = {
-    from: process.env.EMAIL,
-    to: email,
-    subject: number,
+    from: email,
+    to: process.env.EMAIL,
+    subject: name,
     html: `You got a message from 
     Email : ${email} <br>
     Name: ${name} <br>
+    Number: ${number} <br>
     Message: ${message}`,
   };
   try {
