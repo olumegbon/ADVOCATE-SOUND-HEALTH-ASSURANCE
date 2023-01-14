@@ -40,7 +40,7 @@ async function mainMail(name, email, number, message) {
   }
 }
 
-app.post("/", async (req, res, next) => {
+app.post("https://advocate-health-care-6uah-olumegbon.vercel.app/", async (req, res, next) => {
   const { name, email, number, message } = req.body;
   try {
     await mainMail(name, email, number, message);
@@ -52,4 +52,4 @@ app.post("/", async (req, res, next) => {
   }
 });
 
-app.listen(process.env.port, () => console.log("Server is running!"));
+//app.listen(process.env.port, () => console.log("Server is running!"));
