@@ -53,4 +53,7 @@ app.post("/", async (req, res, next) => {
   }
 });
 
-//app.listen(process.env.port, () => console.log("Server is running!"));
+// Export the Express API
+module.exports = app;
+
+app.listen(process.env.port, () => console.log("Server is running!"));
